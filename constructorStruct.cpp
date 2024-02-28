@@ -1,6 +1,10 @@
 #include <cstdio>
 struct ClockOfTheLongNow
 {
+    ClockOfTheLongNow() {
+
+    }
+
     ClockOfTheLongNow(int year_in)
     {
         if (!set_year(year_in))
@@ -33,7 +37,13 @@ private:
 
 int main()
 {
-    ClockOfTheLongNow clock(2018);
-    printf("Default year: %d", clock.get_year());
+    ClockOfTheLongNow clock;
+    ClockOfTheLongNow* clock_ptr = &clock;
+
+    clock_ptr->set_year(2020);
+
+    printf("address clock: %p \n", clock_ptr);
+
+    printf("Default year: %d", clock_ptr->get_year());
     return 0;
 }
