@@ -1,7 +1,15 @@
 #include <cstdio>
 
-struct ClockOfTheLongNow
+class ClockOfTheLongNow
 {
+  int year;
+
+public:
+  void add_year()
+  {
+    year++;
+  }
+
   bool set_year(int new_year)
   {
     if (new_year < 2019)
@@ -17,9 +25,6 @@ struct ClockOfTheLongNow
   {
     return year;
   }
-
-private:
-  int year;
 };
 
 int main()
