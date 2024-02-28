@@ -31,7 +31,7 @@ int main()
 {
   ClockOfTheLongNow clock;
 
-  clock.set_year(2018);
+  clock.set_year(2022);
 
   printf("year: %d \n", clock.get_year());
 
