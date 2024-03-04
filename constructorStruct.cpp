@@ -42,8 +42,11 @@ int main()
 
     clock_ptr->set_year(2020);
 
+
     printf("address clock: %p \n", clock_ptr);
 
-    printf("Default year: %d", clock_ptr->get_year());
+    int year = clock_ptr->get_year();
+
+    printf("Default year: %d \n", year);
     return 0;
 }
