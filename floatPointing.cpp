@@ -1,14 +1,13 @@
 #include <stdio.h>
 
-
 int main() {
-    double an = 6.0221409e23;
-    
-    printf("Avogadro's Number: %le %lf %lg \n", an, an, an);
+  double an = 6.0221409e23;
 
-    float plataform = 9.75;
+  printf("Avogadro's Number: %le %lf %lg \n", an, an, an);
 
-    printf("Platafor to Hogwarts %e %f %g \n", plataform, plataform, plataform);
+  float plataform = 9.75;
 
-    return 0;
+  printf("Platafor to Hogwarts %e %f %g \n", plataform, plataform, plataform);
+
+  return 0;
 }
